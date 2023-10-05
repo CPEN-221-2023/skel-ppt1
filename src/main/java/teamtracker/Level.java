@@ -1,4 +1,4 @@
-package org.example;
+package teamtracker;
 
 public class Level {
     private int division;

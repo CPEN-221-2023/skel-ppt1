@@ -1,4 +1,4 @@
-package org.example;
+package teamtracker;
 
 import java.util.List;
 
@@ -32,6 +32,11 @@ public class TeamTracker {
     public int totalGamesPlayed() {
         // TODO: Implement this method
         return 0;
+    }
+
+    public Level getCurrentLevel() {
+        // TODO: Implement this method
+        return null;
     }
 
     public List<Integer> getPointsHistory() {
