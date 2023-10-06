@@ -22,19 +22,19 @@ public class Task1Tests {
     @Test
     void test3() {
         TeamTracker team = new TeamTracker("WWL");
-        assertEquals(2.0/3, team.fractionOfWins());
+        assertEquals(2.0/3, team.fractionWins());
     }
 
     @Test
     void test4() {
         TeamTracker team = new TeamTracker("WWL");
-        assertEquals(1.0/3, team.fractionOfLosses());
+        assertEquals(1.0/3, team.fractionLosses());
     }
 
     @Test
     void test5() {
         TeamTracker team = new TeamTracker("WDL");
-        assertEquals(1.0/3, team.fractionOfDraws());
+        assertEquals(1.0/3, team.fractionDraws());
     }
 
     @Test

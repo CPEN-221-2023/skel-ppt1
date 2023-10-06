@@ -24,19 +24,18 @@ public class Level {
         return bracket;
     }
 
-    public boolean updateDivision(int division) {
-        if (division < 1 || division > 4) {
-            return false;
-        }
-        this.division = division;
-        return true;
+    public int hashCode() {
+        return (division * 4 + bracket * 4);
     }
 
-    public boolean updateBracket(int bracket) {
-        if (bracket < 1 || bracket > 4) {
+    public boolean equals(Object other) {
+        if (!(other instanceof Level)) {
             return false;
         }
-        this.bracket = bracket;
-        return true;
+
+        Level oLevel = (Level) other;
+        return (this.division == oLevel.division && this.bracket == oLevel.bracket);
     }
+
+
 }
